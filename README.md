@@ -1,3 +1,3 @@
-# TelerickAgoraVai
-agora vai
- readme teste
+# Telerick AgoraVai
+
+Projeto teste Telerick
