@@ -1,0 +1,30 @@
+<div data-role="view" data-title="Cadastro" data-layout="main" data-model="app.formView" data-show="app.formView.onShow" data-after-show="app.formView.afterShow">
+    <div id="formViewModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Nome
+                        <input data-bind="value: formViewModel.fields.nome" placeholder="José das Couves" type="text">
+                    </label>
+                </li>
+                <li>
+                    <label>Email
+                        <input data-bind="value: formViewModel.fields.email" placeholder="example@example.com" type="email">
+                    </label>
+                </li>
+                <li>
+                    <label>Idade
+                        <input data-bind="value: formViewModel.fields.idade" type="number">
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: formViewModel.cancel }">Cancelar</a>
+                <a class="primary" data-role="button" data-bind="events: { click: formViewModel.submit }">Confirmar</a>
+            </div>
+        </form>
+    </div>
+    <!-- START_CUSTOM_CODE_formView -->
+    <!-- END_CUSTOM_CODE_formView -->
+</div>
